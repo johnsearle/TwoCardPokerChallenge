@@ -1,0 +1,57 @@
+<div>
+  <div class="container">
+    <h1>Two Card Poker - Dealer Page</h1>
+    <div *ngIf="!pokerGame">
+      <div class="row">
+        <div class="col-xs-2"><label for="numPlayers">Number of players</label></div>
+        <div class="col-xs-2">
+          <select class="form-control" id="numPlayers" [(ngModel)]="numPlayers" name="numPlayers">
+            <option *ngFor="let num of [2, 3, 4, 5, 6]" [value]="num">{{num}}</option>
+          </select>
+        </div>
+      </div>
+      <button type="button" class="btn btn-success btn-md" (click)="newGame()">Start</button>
+    </div>
+  </div>
+
+  <div *ngIf="pokerGame">
+
+    <div class="container player-container" *ngFor="let round of pokerGame.rounds index as i">
+      <div class="round">Round {{i + 1}}</div>
+      <div>
+        <button type="button" class="btn btn-success btn-md" (click)="shuffle()" *ngIf="canShuffle(i)">Shuffle</button>
+        <button type="button" class="btn btn-success btn-md" (click)="deal()" *ngIf="canDeal(i)">Deal</button>
+        <button type="button" class="btn btn-success btn-md" (click)="rank(i)" *ngIf="canRank(i)">Rank</button>
+      </div>
+      <div class="grid grid-pad">
+        <div class="col-1-4" *ngFor="let player of round.players">
+          <div class="module">
+            <div class="player">Player {{player.id}}</div>
+            <div *ngFor="let card of player.hand">
+              <div class="badge">{{card.rank}} of {{card.suit}}</div>
+            </div>
+            <div class="result" *ngIf="player.outcome !=='Unknown'">
+              <div>Result: {{player.outcome}}</div>
+              <div>Score: {{player.score}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="overallResults" *ngIf="overallResults">
+        <h2>Overall results</h2>
+        <div *ngFor="let result of overallResults index as i">
+          <div>Player {{result.playerId}}: Overall score {{result.overallScore}}.<span *ngIf="result.overallScore === overallResults[0].overallScore"> (Winner)</span></div>
+        </div>
+      </div>
+      <div>Players: {{pokerGame.rounds[0].players.length}}. Rounds: {{pokerGame.rounds.length}}. Deck currently has {{pokerGame.deck.length}}
+        cards. </div>
+      <button type="button" class="btn btn-success btn-md" (click)="newRound()" *ngIf="canAddRound()">New Round</button>
+      <button type="button" class="btn btn-success btn-md" (click)="finish()" *ngIf="canFinish()">Finish and determine winner</button>
+      <button type="button" class="btn btn-success btn-md" (click)="startNew()" *ngIf="canStartNewGame()">New game</button>
+    </div>
+
+  </div>
+</div>

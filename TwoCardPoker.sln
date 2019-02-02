@@ -1,0 +1,149 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BCFE76C4-F05E-42FE-9680-F2572CD375F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Game", "Game", "{9E805215-8F62-49DA-BFC9-676992AD3C76}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game.Domain", "Services\Game\Game.Domain\Game.Domain.csproj", "{32BED88D-4FFA-482F-9F80-ACB1C41E8F10}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game.API", "Services\Game\Game.API\Game.API.csproj", "{89202BCD-4DCE-45F5-B854-BE52BC9E7CF2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game.API.UnitTests", "Services\Game\Game.API.UnitTests\Game.API.UnitTests.csproj", "{A679FDA5-DA29-403A-82DC-80DD14F6EB29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SPA", "SPA", "{6642DE44-4AF2-41D4-BD46-A900AC0AA60D}"
+	ProjectSection(SolutionItems) = preProject
+		SPA\.editorconfig = SPA\.editorconfig
+		SPA\.gitignore = SPA\.gitignore
+		SPA\angular.json = SPA\angular.json
+		SPA\src\favicon.ico = SPA\src\favicon.ico
+		SPA\src\main.ts = SPA\src\main.ts
+		SPA\package.json = SPA\package.json
+		SPA\README.md = SPA\README.md
+		SPA\tsconfig.json = SPA\tsconfig.json
+		SPA\tslint.json = SPA\tslint.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "e2e", "e2e", "{FA1F50BA-AD76-4BC9-8C42-5A06F5F2980E}"
+	ProjectSection(SolutionItems) = preProject
+		SPA\e2e\protractor.conf.js = SPA\e2e\protractor.conf.js
+		SPA\e2e\tsconfig.e2e.json = SPA\e2e\tsconfig.e2e.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{81746AAA-90E7-429F-A934-51F4DE35E083}"
+	ProjectSection(SolutionItems) = preProject
+		SPA\e2e\src\app.e2e-spec.ts = SPA\e2e\src\app.e2e-spec.ts
+		SPA\e2e\src\app.po.ts = SPA\e2e\src\app.po.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "node_modules", "node_modules", "{2F3C312D-F9B2-48BB-803F-1D690183B8E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A2E93F7C-66A8-461F-8A0E-DEA700AFA44F}"
+	ProjectSection(SolutionItems) = preProject
+		SPA\src\favicon.ico = SPA\src\favicon.ico
+		SPA\src\index.html = SPA\src\index.html
+		SPA\src\karma.conf.js = SPA\src\karma.conf.js
+		SPA\src\main.ts = SPA\src\main.ts
+		SPA\src\polyfills.ts = SPA\src\polyfills.ts
+		SPA\src\styles.css = SPA\src\styles.css
+		SPA\src\test.ts = SPA\src\test.ts
+		SPA\src\tsconfig.app.json = SPA\src\tsconfig.app.json
+		SPA\src\tsconfig.spec.json = SPA\src\tsconfig.spec.json
+		SPA\src\tslint.json = SPA\src\tslint.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{70F9B0EA-CECF-4BD0-A035-BF18931F58D4}"
+	ProjectSection(SolutionItems) = preProject
+		SPA\src\app\app-routing.module.ts = SPA\src\app\app-routing.module.ts
+		SPA\src\app\app.component.css = SPA\src\app\app.component.css
+		SPA\src\app\app.component.html = SPA\src\app\app.component.html
+		SPA\src\app\app.component.spec.ts = SPA\src\app\app.component.spec.ts
+		SPA\src\app\app.component.ts = SPA\src\app\app.component.ts
+		SPA\src\app\app.module.ts = SPA\src\app\app.module.ts
+		SPA\src\app\model.ts = SPA\src\app\model.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dealer", "dealer", "{2B5C0B2B-E236-4DEB-92AA-E7E9DA96F08F}"
+	ProjectSection(SolutionItems) = preProject
+		SPA\src\app\dealer\dealer.component.css = SPA\src\app\dealer\dealer.component.css
+		SPA\src\app\dealer\dealer.component.html = SPA\src\app\dealer\dealer.component.html
+		SPA\src\app\dealer\dealer.component.spec.ts = SPA\src\app\dealer\dealer.component.spec.ts
+		SPA\src\app\dealer\dealer.component.ts = SPA\src\app\dealer\dealer.component.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "messages", "messages", "{0424B2B7-2086-4920-9878-00B11D4AB76A}"
+	ProjectSection(SolutionItems) = preProject
+		SPA\src\app\messages\messages.component.css = SPA\src\app\messages\messages.component.css
+		SPA\src\app\messages\messages.component.html = SPA\src\app\messages\messages.component.html
+		SPA\src\app\messages\messages.component.spec.ts = SPA\src\app\messages\messages.component.spec.ts
+		SPA\src\app\messages\messages.component.ts = SPA\src\app\messages\messages.component.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{2CC87F33-EF72-4316-A5F1-154D226CC213}"
+	ProjectSection(SolutionItems) = preProject
+		SPA\src\app\services\game.service.ts = SPA\src\app\services\game.service.ts
+		SPA\src\app\services\message.service.ts = SPA\src\app\services\message.service.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{24E166FB-4A83-43BE-8924-6D53296EDFE7}"
+	ProjectSection(SolutionItems) = preProject
+		SPA\src\assets\.gitkeep = SPA\src\assets\.gitkeep
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "environments", "environments", "{E97AD675-1AC2-463B-8BD8-873D5CEC7F8B}"
+	ProjectSection(SolutionItems) = preProject
+		SPA\src\environments\environment.prod.ts = SPA\src\environments\environment.prod.ts
+		SPA\src\environments\environment.ts = SPA\src\environments\environment.ts
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game.Domain.UnitTests", "Services\Game\Game.Domain.UnitTests\Game.Domain.UnitTests.csproj", "{188C87CA-30AF-4162-8354-C4EE6DE9F021}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32BED88D-4FFA-482F-9F80-ACB1C41E8F10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32BED88D-4FFA-482F-9F80-ACB1C41E8F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32BED88D-4FFA-482F-9F80-ACB1C41E8F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32BED88D-4FFA-482F-9F80-ACB1C41E8F10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89202BCD-4DCE-45F5-B854-BE52BC9E7CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89202BCD-4DCE-45F5-B854-BE52BC9E7CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89202BCD-4DCE-45F5-B854-BE52BC9E7CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89202BCD-4DCE-45F5-B854-BE52BC9E7CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A679FDA5-DA29-403A-82DC-80DD14F6EB29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A679FDA5-DA29-403A-82DC-80DD14F6EB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A679FDA5-DA29-403A-82DC-80DD14F6EB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A679FDA5-DA29-403A-82DC-80DD14F6EB29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{188C87CA-30AF-4162-8354-C4EE6DE9F021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{188C87CA-30AF-4162-8354-C4EE6DE9F021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{188C87CA-30AF-4162-8354-C4EE6DE9F021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{188C87CA-30AF-4162-8354-C4EE6DE9F021}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9E805215-8F62-49DA-BFC9-676992AD3C76} = {BCFE76C4-F05E-42FE-9680-F2572CD375F0}
+		{32BED88D-4FFA-482F-9F80-ACB1C41E8F10} = {9E805215-8F62-49DA-BFC9-676992AD3C76}
+		{89202BCD-4DCE-45F5-B854-BE52BC9E7CF2} = {9E805215-8F62-49DA-BFC9-676992AD3C76}
+		{A679FDA5-DA29-403A-82DC-80DD14F6EB29} = {9E805215-8F62-49DA-BFC9-676992AD3C76}
+		{FA1F50BA-AD76-4BC9-8C42-5A06F5F2980E} = {6642DE44-4AF2-41D4-BD46-A900AC0AA60D}
+		{81746AAA-90E7-429F-A934-51F4DE35E083} = {FA1F50BA-AD76-4BC9-8C42-5A06F5F2980E}
+		{2F3C312D-F9B2-48BB-803F-1D690183B8E1} = {6642DE44-4AF2-41D4-BD46-A900AC0AA60D}
+		{A2E93F7C-66A8-461F-8A0E-DEA700AFA44F} = {6642DE44-4AF2-41D4-BD46-A900AC0AA60D}
+		{70F9B0EA-CECF-4BD0-A035-BF18931F58D4} = {A2E93F7C-66A8-461F-8A0E-DEA700AFA44F}
+		{2B5C0B2B-E236-4DEB-92AA-E7E9DA96F08F} = {70F9B0EA-CECF-4BD0-A035-BF18931F58D4}
+		{0424B2B7-2086-4920-9878-00B11D4AB76A} = {70F9B0EA-CECF-4BD0-A035-BF18931F58D4}
+		{2CC87F33-EF72-4316-A5F1-154D226CC213} = {70F9B0EA-CECF-4BD0-A035-BF18931F58D4}
+		{24E166FB-4A83-43BE-8924-6D53296EDFE7} = {A2E93F7C-66A8-461F-8A0E-DEA700AFA44F}
+		{E97AD675-1AC2-463B-8BD8-873D5CEC7F8B} = {A2E93F7C-66A8-461F-8A0E-DEA700AFA44F}
+		{188C87CA-30AF-4162-8354-C4EE6DE9F021} = {9E805215-8F62-49DA-BFC9-676992AD3C76}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFE1C2E6-86EB-42E3-BA77-9E161EC192B4}
+	EndGlobalSection
+EndGlobal
